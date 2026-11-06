@@ -6,6 +6,7 @@ from router import health
 
 app = FastAPI()
 
+# Configure CORS (Cross-Origin Resource Sharing) settings for the frontend origins
 allowed_origins = [
     origin.strip()
     for origin in os.getenv(
