@@ -16,6 +16,7 @@ allowed_origins = [
     if origin.strip()
 ]
 
+# Add CORS middleware to the FastAPI application
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
