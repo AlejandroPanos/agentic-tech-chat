@@ -25,4 +25,5 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Include API routers for different endpoints
 app.include_router(health.router)
